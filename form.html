@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Form</title>
+  </head>
+  <style>
+    .container {
+      width: 1200px;
+      margin: 100px auto;
+      border-radius: 15px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.4);
+      padding: 36px;
+    }
+    a:link,
+    a:visited {
+      text-decoration: none;
+      font-size: 24px;
+    }
+  </style>
+  <body>
+    <header>
+      <a href="index.html">&lAarr; Link na index stranicu</a>
+    </header>
+    <div class="container">
+      <h1>Form</h1>
+      <br />
+      <form action="#" method="post">
+        <label for="ime">Ime: </label>
+        <input type="text" id="ime" name="ime" placeholder="e.g. Milos" />
+        <br />
+        <label for="mail">Email: </label>
+        <input
+          type="email"
+          id="mail"
+          name="mail"
+          placeholder="e.g. milos.marojevic20@gmail.com"
+        />
+        <br />
+        <label for="phone">Broj telefona: </label>
+        <input
+          type="tel"
+          id="phone"
+          name="phone"
+          placeholder="e.g. 069 111 222"
+        />
+        <br />
+        <fieldset>
+          <legend>Unesite poruku</legend>
+          <textarea name="poruka" rows="10" cols="160">
+            Unesite tekst</textarea
+          >
+        </fieldset>
+        <br />
+        <input type="submit" value="Pošalji" />
+      </form>
+      <footer>
+        <hr />
+        <p>Ovo je primjer footera &copy2024 Milos Marojevic</p>
+      </footer>
+    </div>
+  </body>
+</html>
